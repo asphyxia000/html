@@ -1,167 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин Cyber/Быт/</title>
     <!-- Bootstrap reboot (для сброса стилей) -->
-    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css" />
-
+    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
     <!-- Bootstrap сетка -->
-    <link rel="stylesheet" href="libs/bootstrap-grid.min.css" />
-
-    <link rel="stylesheet" href="static/styles/style.css" />
-    
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="static/styles/style.css">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/878f9c0732.js" crossorigin="anonymous"></script>
-    <base href="a" target="_blank" />
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="navconteiner">
+        <div class="navbar-container">
             <a href="/index.php" class="navbar-logo">Cyber/Быт/</a>
             <div class="search-box">
-                <input class="search-txt" type="text" name="" placeholder="Поиск по сайту..." />
-                <a class="search-btn" href="3"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input class="search-txt" type="text" placeholder="Поиск по сайту...">
+                <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
-            <div class="navbarwrap">
+            <div class="navbar-wrap">
                 <ul class="navbar-menu">
-                    <li>
-                        <a href="/pageKatalog.php">Каталог <i class="fa-solid fa-chevron-down"></i></a>
-                    </li>
-                    <li>
-                        <li><a href="/vhod.php"><i class="fa-solid fa-user"></i><span> Войти</span></a></li>;
-                    </li>
-                    <li>
-                        <a href="/pagekorzina.php"><i class="fa-solid fa-trash"></i><span> Корзина</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa-solid fa-phone"></i><span> Тех поддержка</span></a>
-                    </li>
+                    <li><a href="/pageKatalog.php">Каталог <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="/vhod.php"><i class="fa-solid fa-user"></i><span> Войти</span></a></li>
+                    <li><a href="/pagekorzina.php"><i class="fa-solid fa-trash"></i><span> Корзина</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i><span> Тех поддержка</span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <header class="header">
-        <div class="conteiner">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 header-content">
                     <h1>ТОП 1 Сайт с бытовой техникой в РФ!</h1>
-                    <h4>Интернет-магазин и сеть гипермаркетов бытовой техники </h4>
-                    <a href="/pageKatalog.php"><button class="btn-main">Выбрать товар</button></a>
+                    <h4>Интернет-магазин и сеть гипермаркетов бытовой техники</h4>
+                    <a href="/pageKatalog.php" class="btn-main">Выбрать товар</a>
                 </div>
             </div>
         </div>
         <div class="overlay"></div>
     </header>
 
-    <div class="novosti">
+    <section class="novosti">
         <h1>Новинки и акции</h1>
-        <p>Мы в открылись, смотри что нового!</p>
-    </div>
+        <p>Мы открылись, смотри что нового!</p>
+    </section>
+
     <div class="slider">
         <div class="slider-line">
-            <img class="slider-img" src="static/images/1.webp" alt="">
+            <img class="slider-img" src="static/images/1.webp" alt="Слайдер изображение">
         </div>
-    </div>
-
     </div>
 
     <main>
-        <div class="rekomend">
-            <h1>Рекомедуем к покупке</h1>
-        </div>
-        <div class="rekomend-conteiner">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="product">
-                        <div class="imgess">
-                            <img src="static/images/holod2.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Холодильник с морозильником Aceline B16AMG</h3>
-                            <div class="info-price">
-                                <span class="price">Цена: 20000<small>₽</small> </span>
-                                <button class="add">В корзину</i></button>
+        <section class="recommendations">
+            <h1>Рекомендуем к покупке</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="static/images/holod2.jpg" alt="Холодильник Aceline B16AMG">
+                            </div>
+                            <div class="product-info">
+                                <h3>Холодильник с морозильником Aceline B16AMG</h3>
+                                <div class="price-info">
+                                    <span class="price">Цена: 20 000<small>₽</small></span>
+                                    <button class="add-to-cart">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product">
-                        <div class="imgess2">
-                            <img src="static/images/holod3.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Холодильник с морозильником Nordfrost </h3>
-                            <div class="info-price">
-                                <span class="price">Цена: 17000<small>₽</small> </span>
-                                <button class="add">В корзину</i></button>
+
+                    <div class="col-md-2">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="static/images/holod3.jpg" alt="Холодильник Nordfrost">
+                            </div>
+                            <div class="product-info">
+                                <h3>Холодильник с морозильником Nordfrost</h3>
+                                <div class="price-info">
+                                    <span class="price">Цена: 17 000<small>₽</small></span>
+                                    <button class="add-to-cart">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product">
-                        <div class="imgess3">
-                            <img src="static/images/mikrovolnovka.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Микроволновая печь Redmond RM-2005D</h3>
-                            <div class="info-price">
-                                <span class="price">Цена: 8000<small>₽</small> </span>
-                                <button class="add">В корзину</i></button>
+
+                    <div class="col-md-2">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="static/images/mikrovolnovka.png" alt="Микроволновая печь Redmond RM-2005D">
+                            </div>
+                            <div class="product-info">
+                                <h3>Микроволновая печь Redmond RM-2005D</h3>
+                                <div class="price-info">
+                                    <span class="price">Цена: 8 000<small>₽</small></span>
+                                    <button class="add-to-cart">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product2">
-                        <div class="imgess4">
-                            <img src="static/images/posudo.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Посудомоечная машина Oursson DW4001TD/DC красный</h3>
-                            <div class="info-price">
-                                <span class="price">Цена: 7690<small>₽</small> </span>
-                                <button class="add">В корзину</i></button>
+
+                    <div class="col-md-2">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="static/images/posudo.jpg" alt="Посудомоечная машина Oursson DW4001TD/DC">
+                            </div>
+                            <div class="product-info">
+                                <h3>Посудомоечная машина Oursson DW4001TD/DC красный</h3>
+                                <div class="price-info">
+                                    <span class="price">Цена: 7 690<small>₽</small></span>
+                                    <button class="add-to-cart">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product">
-                        <div class="imgess5">
-                            <img src="static/images/holod2.jpg" alt="">
-                        </div>
-                        <div class="info">
-                            <h3>Холодильник с морозильником Aceline B14AMG</h3>
-                            <div class="info-price">
-                                <span class="price">Цена: 7650<small>₽</small> </span>
-                                <button class="add">В корзину</i></button>
+
+                    <div class="col-md-2">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="static/images/holod2.jpg" alt="Холодильник Aceline B14AMG">
+                            </div>
+                            <div class="product-info">
+                                <h3>Холодильник с морозильником Aceline B14AMG</h3>
+                                <div class="price-info">
+                                    <span class="price">Цена: 7 650<small>₽</small></span>
+                                    <button class="add-to-cart">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <nav>
+        <nav class="footer-menu">
             <a href="Верстка сайта.html">О компании</a>
-            <a href="">Акции</a>
-            <a href="">Доставка</a>
-            <a href="">Отзывы</a>
-            <a href="">Обратная связь</a>
-            <a href="">Мы в соц.сетях</a>
+            <a href="#">Акции</a>
+            <a href="#">Доставка</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Обратная связь</a>
+            <a href="#">Мы в соцсетях</a>
         </nav>
-        <div class="social">
-            <a href=""><img src="static/images/vk.png" alt=""></a>
-            <a href=""><img src="static/images/inst.png" alt=""></a>
-            <a href=""><img src="static/images/gm.png" alt=""></a>
+        <div class="social-media">
+            <a href="#"><img src="static/images/vk.png" alt="VK"></a>
+            <a href="#"><img src="static/images/inst.png" alt="Instagram"></a>
+            <a href="#"><img src="static/images/gm.png" alt="Gmail"></a>
         </div>
     </footer>
 
